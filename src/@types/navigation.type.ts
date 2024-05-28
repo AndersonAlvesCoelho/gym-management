@@ -4,9 +4,9 @@ export type RootNavigationProps = {
   PasswordRecovery: undefined;
   MainTabs: undefined;
   Home: undefined;
+  Menu: undefined;
+  Users: undefined;
+  Training: undefined;
 
-  BenefitsStack: undefined;
-  ContactUs: undefined;
-  Profile: undefined;
-  FAQ: undefined;
+
 };

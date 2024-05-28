@@ -12,6 +12,22 @@ function formatDateToAmerican(inputDate: string): string {
   return `${year}-${month}-${day}`;
 }
 
+function formatDate(): string {
+  const months = [
+      'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+      'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+  ];
+
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = months[currentDate.getMonth()];
+  const year = currentDate.getFullYear();
+
+  return `${month} ${day}, ${year}`;
+}
+
+console.log(formatDate()); // Exemplo de saída: Abril 10, 2021
+
 
 export { formatDateDayMonth, formatDateToAmerican };
 
